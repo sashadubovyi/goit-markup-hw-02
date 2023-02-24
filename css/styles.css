@@ -1,9 +1,17 @@
+:root {
+  --main-color: #ffffff;
+  --secondary-color: #2e2f42;
+  --secondary-text: #434455;
+  --background-color: #f4f4fd;
+  --elements-color: #4d5ae5;
+  --active-touch: #404bbf;
+  --border: #e7e9fc;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  width: 1440px;
-  height: 2590px;
-  background-color: #ffffff;
+  background-color: var(--main-color);
+  font-size: 16px;
 }
 
 /* main page */
@@ -13,122 +21,148 @@ body {
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--main-text);
   text-decoration: none;
 }
 
 .logo span {
-  color: #4d5ae5;
+  color: var(--elements-color);
 }
 
-.nav-address a {
-  text-decoration: none;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #434455;
+.nav-link:hover {
+  color: var(--active-touch);
 }
 
-.nav-list a {
+.nav-link:focus {
+  color: var(--active-touch);
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--secondary-color);
+}
+
+.address-link {
   text-decoration: none;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text);
+}
+
+.nav-address {
   list-style-type: none;
 }
 
-.link {
-  list-style-type: none;
+.address-link:hover {
+  color: var(--active-touch);
 }
 
-.hero-image {
-  background-color: #2e2f42;
+.address-link:focus {
+  color: var(--active-touch);
 }
 
-#main-text {
-  font-weight: 700;
+.hero {
+  background-color: var(--secondary-color);
+}
+
+.hero-title {
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 .hero-button {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.07;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--main-color);
+  background: var(--elements-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.hero-button:hover {
+  background: var(--active-touch);
+}
+
+.hero-button:focus {
+  background: var(--active-touch);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
 }
 
 .our-goal-list {
   list-style-type: none;
 }
 
-h3 {
+.future-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--secondary-color);
 }
 
-.our-goal-list p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+.future-text {
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-text);
 }
 
-.work-pictures {
+.about-pictures {
   list-style-type: none;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  color: #2e2f42;
-}
-
-.section-3 {
-  background: #f4f4fd;
+.section-team {
+  background: var(--background-color);
 }
 
 .team-cards li {
-  background: #ffffff;
+  background: var(--main-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   list-style-type: none;
 }
 
-.employee-position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #434455;
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.team-position {
+  line-height: 1.5;
+  color: var(--secondary-text);
+  letter-spacing: 0.02em;
 }
 
 .footer {
-  background: #2e2f42;
+  background: var(--secondary-color);
 }
 
 .footer a {
@@ -141,20 +175,18 @@ h2 {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--background-color);
   text-decoration: none;
 }
 
 .footer a span {
-  color: #4d5ae5;
+  color: var(--elements-color);
 }
 
-.footer p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+.footer-text {
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color: var(--border);
 }
 
 /* portfolio */
@@ -164,41 +196,48 @@ h2 {
 }
 
 .filters-btn {
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  background: var(--background-color);
+  border: 1px solid var(--border);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  color: #4d5ae5;
+  line-height: 1.5;
+  color: var(--elements-color);
 }
 
-.filters-btn-active {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-
-  background: #404bbf;
+.filters-btn:hover {
+  background: var(--active-touch);
+  color: var(--main-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
 }
 
-.content-card {
+.filters-btn:focus {
+  background: var(--active-touch);
+  color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.cards-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.cards-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text);
+}
+
+.filters-cards li {
   list-style-type: none;
   box-sizing: border-box;
-  border: 1px solid #e7e9fc;
-  background: #ffffff;
-}
-
-.content-card p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #434455;
+  border: 1px solid var(--border);
+  background: var(--main-color);
 }
