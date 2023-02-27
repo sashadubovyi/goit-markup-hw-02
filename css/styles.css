@@ -105,7 +105,6 @@ body {
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: var(--secondary-color);
@@ -120,7 +119,7 @@ body {
 .future-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
@@ -224,7 +223,7 @@ body {
 .cards-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
